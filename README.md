@@ -1,2 +1,2 @@
-# album
-a group of albums showing pictures between friends
+# Album
+A group of albums showing pictures between friends

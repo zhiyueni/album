@@ -1,0 +1,229 @@
+<!DOCTYPE html >
+<html >
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=8">
+  <title>photos的相册_photos个人相册相片存储_相册</title>
+  <link type="text/css" rel="stylesheet" href="/static/css/index/index1.css">
+  <link type="text/css" rel="stylesheet" href="/static/css/index/index2.css">
+  <link type="text/css" rel="stylesheet" href="/static/css/index/index3.css">
+</head>
+
+<body id="photo-163-com">
+<div class="base-topbar">
+  <section class="base-topbar photo-page-width">
+    <article class="topbar-mod clearfix">
+      <hgroup class="photo-logo clearfix">
+        <h1 class="logo">
+          <a title="记忆相册" href="">
+            <img src="/static/images/logo.png" alt="记忆相册">
+          </a>
+        </h1>
+      </hgroup>
+      <nav class="site-nav">
+        <ol class="quick-menu clearfix">
+          <li class="item first"><a id="headerLogin" class="menu" href="javascript:void(0);" needlogin="true">登录我的相册</a></li>
+          <li id="myPPWrap" class="item">
+            <a id="myPP" class="menu clearfix" href="" target="_blank">
+              <span class="hd">记忆摄影</span>
+              <span class="arrow"></span>
+            </a>
+            <div id="myPPBox" class="sub-menu-box">
+              <div class="sub-menu-wrap clearfix">
+                <ol class="sub-menu-list clearfix">
+                  <li class="itm"><a class="tab" href="" target="_blank">广场</a></li>
+                  <li class="itm"><a class="tab" href="" target="_blank">作品</a></li>
+                  <li class="itm"><a class="tab" href="" target="_blank">影展</a></li>
+                </ol>
+              </div>
+            </div>
+          </li>
+          <li class="item"><a class="menu" href="javascript:void(0);">注册</a></li>
+        </ol>
+      </nav>
+    </article>
+  </section>
+</div>
+
+<div class="header-wrap-mod">
+  <div class="header-wrap-mod photo-page-width">
+    <div class="header-mod clearfix">
+      <div class="header-main clearfix">
+        <div class="hd">
+          <img alt="photos的相册" title="photos的相册" class="pic" src="http://r.ph.126.net/image/default/duser.png" onerror="this.src='http://r.ph.126.net/image/default/duser.png'">
+        </div>
+        <div class="bd clearfix">
+          <div class="user-info clearfix">
+            <span class="title">photos</span>
+            <a href="javascript:void(0);" class="no-vip" target="_blank">VIP详情</a>
+          </div>
+          <div class="user-act loc clearfix">
+            <a id="J-photoIndexFollow" class="follow" href="javascript:void(0);" hidefocus="true" needlogin="true">
+              <span class="tx plus">关注她</span>
+            </a>
+            <a id="J-photoIndexMessage" class="message" href="javascript:void(0);" hidefocus="true" needlogin="true">发消息</a>
+          </div>
+        </div>
+      </div>
+      <ul class="nav-list clearfix">
+        <li class="item first js-cur">
+          <a class="name j-album" href="javascript:void(0);" hidefocus="true">相册</a>
+          <span class="arrow"></span>
+        </li>
+        <li class="item">
+          <a class="name j-train" href="javascript:void(0);" hidefocus="true">影像隧道</a>
+
+        </li>
+        <li class="item">
+          <a class="name j-galbum" href="javascript:void(0);" hidefocus="true">相片群</a>
+
+        </li>
+
+        <li class="item item-yxp">
+          <a class="name" href="javascript:void(0);" onclick="uploadImg()" hidefocus="true" target="_blank"><em></em><span>定制照片书</span></a>
+        </li>
+
+      </ul>
+      <a href="" class="header-extra cloud_link f-trans2" title="点击进入记忆相册官网" target="_blank">
+			<span>
+				<strong>记忆相册</strong>
+				<em>将记忆相册装进口袋</em>
+			</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<div class="modules album-page-mod" id="photo-163-com-container"><div class="mdl m0 album-page-mod">
+  <div class="ztag201008041230345 nbox album-page-mod clearfix"><div><div class="ln0">
+    <ul class="page-menu clearfix">
+      <li class="item ztag201008041230345 folder">
+        <a class="ztag201008041230345 menu" href="javascript:void(0);"><span class="hd">分类</span><span class="arrow"></span></a>
+        <div class="menu-box">
+          <div class="menu-wrap clearfix">
+            <ol class="ztag201008041230345 menu-list clearfix">
+              <li class="itm loading"><span class="tab">加载中...</span></li>
+            </ol>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+    <div class="ln1 clearfix">
+      <span class="ibtn ibtn-gray clearfix"><span class="icn-album">&nbsp;</span>相册视图</span>
+      <a href="" class="ztag201008041230345 ibtn ibtn-white clearfix"><span class="icn-line">&nbsp;</span>时光墙</a>
+      <div class="tip ztag201008041230345" style="display: block;">
+        <div class="clearfix">
+          <span class="msg">新功能：时光墙带你穿越时光!</span>
+          <span class="close ztag201008041230345"></span>
+        </div>
+        <span class="arrow"></span>
+      </div>
+    </div></div></div>
+  <div class="ztag201008041230345 mbox clearfix">
+    {volist name="public" key="num" id="vo"}
+    <div class="item">
+      <div class="ln ln0"><a href="javascript:void(0)" onclick="zhanshi(this.name)" name="{$vo['xcid']}"><img class="ztag201008041230345" src="{$vo['imgaddr']}" title="未分类相册"></a></div>
+      <div class="ln ln2"><span class="ztag201008041230345">{$vo["xcname"]}</span><span class="ztag201008041230345 fc10">({$vo["numbers"]})</span></div>
+      <div class="ln ln1 f-d clearfix fc10"><div class="l ztag201008041230345">创建于{$vo["createtime"]}</div><span class="ztag201008041230345 r">公开</span></div>
+    </div>
+    {/volist}
+    <div class="item">
+      <div class="ln ln0"><a href="javascript:void(0)" onclick="addalbum()" name="添加相册"><img class="ztag201008041230345" src="/static/images/index/jiahao.jpg" title="添加相册"></a></div>
+      <div class="ln ln2"><span class="ztag201008041230345">添加相册</span></div>
+      <div class="ln ln1 f-d clearfix fc10"><div class="l ztag201008041230345"></div><span class="ztag201008041230345 r"></span></div>
+    </div>
+  </div>
+  <div class="ztag201008041230345 pbox pager js-lpager album-page-mod">
+    <div class="ui-4285818669 noselect js-zfrg-6540" style="display: none;">
+      <span class="pgi pgb pgbleft iblock js-znpg-097">上一页</span>
+      <span class="pgi zpg1 iblock js-zslt-987">1</span>
+      <span class="frg fgp ">...</span>
+      <span class="pgi zpg2 iblock" style="display: none;">-1</span>
+      <span class="pgi zpg3 iblock" style="display: none;">-1</span>
+      <span class="pgi zpg4 iblock" style="display: none;">-1</span>
+      <span class="pgi zpg5 iblock" style="display: none;">-1</span>
+      <span class="pgi zpg6 iblock" style="display: none;">-1</span>
+      <span class="pgi zpg7 iblock" style="display: none;">-1</span>
+      <span class="pgi zpg8 iblock" style="display: none;">-1</span>
+      <span class="frg fgn ">...</span>
+      <span class="pgi zpg9 iblock" style="display: none;">-1</span>
+      <span class="pgi pgb pgbright iblock js-znpg-097">下一页</span>
+    </div>
+  </div>
+
+  <div class="m-photoad  m-photoad-1" style="display:none">
+    <a class="adlink" target="_blank" href="#"><img style="border:none;" id="albumlistadimg"></a>
+    <div id="flashadwrap1" class="flashadwrap"></div>
+  </div>
+
+
+  <div style="display:none;position:fixed; _position:absolute; right:10px; bottom:10px; background:#333; padding:0 0px; text-align:center; color:#999; z-index:91;">
+    <a href="http://www.lofter.com/?act=qbxclby_20150228_01/" target="_blank" style="display:block;">
+      <img src="http://r1.ph.126.net/photo/image/photo131.gif" width="122" height="209">
+    </a>
+  </div>
+</div></div>
+
+<footer class="footer">
+  <div class="footer-wrap">
+    <!--<a class="item" href="http://gb.corp.163.com/gb/home.shtml" target="_blank">关于</a>-->
+    <!--<a class="item" href="http://yxp.163.com" target="_blank">印像派</a>-->
+    <!--<a class="item" href="http://fankui.163.com/ft/tutorial.fb?pid=3" target="_blank">意见反馈</a>-->
+    <!--<a class="item" href="http://fankui.163.com/ft/faqList.fb?pid=3" target="_blank">常见问题</a>-->
+    <!--<a class="item" href="http://hr.163.com/" target="_blank">招聘信息</a>-->
+    <!--<a class="item" href="http://help.163.com/" target="_blank">客户服务</a>-->
+    <!--<a class="item" href="http://gb.corp.163.com/gb/legal.html" target="_blank">隐私政策</a>-->
+    <!--<p></p>-->
+  </div>
+</footer>
+<div class="g-lbody fixed" style="display:none;"></div>
+<div class="ui-3509055471 nbw-win zbwin postadlayer adpushwin">
+  <div class="zwrp">     <a href="javascript:;" class="zcls zflg" title="关闭"></a>
+    <div class="ztbr noselect"><div class="zttl thide fc1 zflg">信息提示</div>
+    </div>
+    <div class="zcnt fc2 zflg">
+      <div class="" style="top: 100px; left: 200px;">
+        <div class="m-adv ztag" style="display: none; bottom: -300px;">
+          <div class="m-advc">
+            <a class="ztag adv adv-img" href="#" target="_blank">
+              <p><img class="ztag hidden"><img class="ztag"></p>
+              <span class="cover ztag"></span>
+              <span class="tag ztag"><span class="logo">&nbsp;</span><span class="source thide ztag"></span>
+            </span>
+              <span class="imgcover">&nbsp;</span>
+            </a>
+            <div class="adv adv-flash xtag">
+              <a class="link xtag" href="#" target="_blank"></a>
+              <div class="flashwrap">
+                <div class="stubwrap xtag"></div>
+                <div class="showwrap xtag"></div>
+              </div>
+            </div>
+            <a href="#" title="关闭" class="ztag btn-close"></a>
+            <iframe marginwidth="0" marginheight="0" class="ztag adv-iframe" width="300" height="250" frameborder="0" scrolling="no" allowtransparency="true"></iframe>           </div>
+        </div>
+      </div>
+    </div>
+    <div class="zext zext0">&nbsp;</div>
+    <div class="zext zext1">&nbsp;</div>
+    <div class="zext zext2">&nbsp;</div>
+    <div class="zext zext3">&nbsp;</div>
+    <div class="zext zext4">&nbsp;</div>
+    <div class="zext zext5">&nbsp;</div>
+  </div>
+</div>
+</body>
+<script>
+    function zhanshi(value){
+        window.location.href = '/Index/index/showstyle?xcid='+value;
+    }
+    function uploadImg() {
+        window.location.href = '/Index/index/uploadImg';
+    }
+    function addalbum() {
+        window.location.href = '/Index/index/addalbum';
+    }
+</script>
+</html>

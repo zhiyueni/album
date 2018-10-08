@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery+CSS3动画相册代码</title>
+
+<link rel="stylesheet" href="/static/css/showstyle1/style.css" />
+
+
+</head>
+<body>
+
+  <div id="gallery-container">
+    
+    <ul class="items--small">
+      <li class="item"><a href="#"><img src="/static/images/showstyle1/1.jpg" alt="" /></a></li>
+      <li class="item"><a href="#"><img src="/static/images/showstyle1/2.jpg" alt="" /></a></li>
+      <li class="item"><a href="#"><img src="/static/images/showstyle1/3.jpg" alt="" /></a></li>
+      <li class="item"><a href="#"><img src="/static/images/showstyle1/4.jpg" alt="" /></a></li>
+      <li class="item"><a href="#"><img src="/static/images/showstyle1/5.jpg" alt="" /></a></li>
+      <li class="item"><a href="#"><img src="/static/images/showstyle1/6.jpg" alt="" /></a></li>
+      <li class="item"><a href="#"><img src="/static/images/showstyle1/7.jpg" alt="" /></a></li>
+      <li class="item"><a href="#"><img src="/static/images/showstyle1/8.jpg" alt="" /></a></li>
+      <li class="item"><a href="#"><img src="/static/images/showstyle1/9.jpg" alt="" /></a></li>
+      <li class="item"><a href="#"><img src="/static/images/showstyle1/10.jpg" alt="" /></a></li>
+      <li class="item"><a href="#"><img src="/static/images/showstyle1/11.jpg" alt="" /></a></li>
+      <li class="item"><a href="#"><img src="/static/images/showstyle1/12.jpg" alt="" /></a></li>
+    </ul>
+    <ul class="items--big">
+      <li class="item--big">
+        <a href="#">
+          <figure>
+            <img src="/static/images/showstyle1/1.jpg" alt="" />
+            <fig美女 class="img-美女">
+              美女
+            </fig美女>
+          </figure>
+          </a>
+      </li>
+      <li class="item--big">
+        <a href="#">
+          <figure>
+            <img src="/static/images/showstyle1/2.jpg" alt="" />
+            <fig美女 class="img-美女">
+              美女
+            </fig美女>
+          </figure>
+          </a>
+      </li>
+      <li class="item--big">
+        <a href="#">
+          <figure>
+            <img src="/static/images/showstyle1/3.jpg" alt="" />
+            <fig美女 class="img-美女">
+              美女
+            </fig美女>
+          </figure>
+          </a>
+      </li>
+      <li class="item--big">
+        <a href="#">
+          <figure>
+            <img src="/static/images/showstyle1/4.jpg" alt="" />
+            <fig美女 class="img-美女">
+              美女
+            </fig美女>
+          </figure>
+          </a>
+      </li>
+      <li class="item--big">
+        <a href="#">
+          <figure>
+            <img src="/static/images/showstyle1/5.jpg" alt="" />
+            <fig美女 class="img-美女">
+              美女
+            </fig美女>
+          </figure>
+          </a>
+      </li>
+      <li class="item--big">
+        <a href="#">
+          <figure>
+            <img src="/static/images/showstyle1/6.jpg" alt="" />
+            <fig美女 class="img-美女">
+              美女
+            </fig美女>
+          </figure>
+          </a>
+      </li>
+      <li class="item--big">
+        <a href="#">
+          <figure>
+            <img src="/static/images/showstyle1/7.jpg" alt="" />
+            <fig美女 class="img-美女">
+              美女
+            </fig美女>
+          </figure>
+          </a>
+      </li>
+      <li class="item--big">
+        <a href="#">
+          <figure>
+            <img src="/static/images/showstyle1/8.jpg" alt="" />
+            <fig美女 class="img-美女">
+              美女
+            </fig美女>
+          </figure>
+          </a>
+      </li>
+      <li class="item--big">
+        <a href="#">
+          <figure>
+            <img src="/static/images/showstyle1/9.jpg" alt="" />
+            <fig美女 class="img-美女">
+              美女
+            </fig美女>
+          </figure>
+          </a>
+      </li>
+      <li class="item--big">
+        <a href="#">
+          <figure>
+            <img src="/static/images/showstyle1/10.jpg" alt="" />
+            <fig美女 class="img-美女">
+              美女
+            </fig美女>
+          </figure>
+          </a>
+      </li>
+      <li class="item--big">
+        <a href="#">
+          <figure>
+            <img src="/static/images/showstyle1/11.jpg" alt="" />
+            <fig美女 class="img-美女">
+              美女
+            </fig美女>
+          </figure>
+          </a>
+      </li>
+      <li class="item--big">
+        <a href="#">
+          <figure>
+            <img src="/static/images/showstyle1/12.jpg" alt="" />
+            <fig美女 class="img-美女">
+              美女
+            </fig美女>
+          </figure>
+          </a>
+      </li>
+    </ul>
+    <div class="controls">
+      <span class="control icon-arrow-left" data-direction="previous"></span> 
+      <span class="control icon-arrow-right" data-direction="next"></span> 
+      <span class="grid icon-grid"></span>
+      <span class="fs-toggle icon-fullscreen"></span>
+    </div>
+    
+  </div>
+
+
+<script src="/static/js/showstyle1/jquery-1.8.2.min.js"></script>
+<script src="/static/js/showstyle1/plugins.js"></script>
+<script src="/static/js/showstyle1/scripts.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#gallery-container').sGallery({
+		fullScreenEnabled: true
+	});
+});
+</script>
+<!-- 代码 结束 -->
+
+
+</body>
+</html>

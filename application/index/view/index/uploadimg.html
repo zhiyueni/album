@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML5多文件预览上传-zyUpload</title>
+		<!-- 引用控制层插件样式 -->
+		<link rel="stylesheet" href="/static/css/upload/zyUpload.css" type="text/css">
+		<link type="text/css" rel="stylesheet" href="/static/css/index/index1.css">
+		<link type="text/css" rel="stylesheet" href="/static/css/index/index2.css">
+		<link type="text/css" rel="stylesheet" href="/static/css/index/index3.css">
+	</head>
+	
+	<body id="photo-163-com">
+		<div class="base-topbar">
+		<section class="base-topbar photo-page-width">
+			<article class="topbar-mod clearfix">
+				<hgroup class="photo-logo clearfix">
+					<h1 class="logo">
+						<a title="记忆相册" href="">
+							<img src="/static/images/logo2.png" alt="记忆相册">
+						</a>
+					</h1>
+				</hgroup>
+				<nav class="site-nav">
+					<ol class="quick-menu clearfix">
+						<li class="item first"><a id="headerLogin" class="menu" href="javascript:void(0);" needlogin="true">登录我的相册</a></li>
+						<li id="myPPWrap" class="item">
+							<a id="myPP" class="menu clearfix" href="" target="_blank">
+								<span class="hd">记忆摄影</span>
+								<span class="arrow"></span>
+							</a>
+							<div id="myPPBox" class="sub-menu-box">
+								<div class="sub-menu-wrap clearfix">
+									<ol class="sub-menu-list clearfix">
+										<li class="itm"><a class="tab" href="" target="_blank">广场</a></li>
+										<li class="itm"><a class="tab" href="" target="_blank">作品</a></li>
+										<li class="itm"><a class="tab" href="" target="_blank">影展</a></li>
+									</ol>
+								</div>
+							</div>
+						</li>
+						<li class="item"><a class="menu" href="javascript:void(0);">注册</a></li>
+					</ol>
+				</nav>
+			</article>
+		</section>
+	</div>
+		<div class="header-wrap-mod">
+		<div class="header-wrap-mod photo-page-width">
+			<div class="header-mod clearfix">
+				<div class="header-main clearfix">
+					<div class="hd">
+						<img alt="photos的相册" title="photos的相册" class="pic" src="http://r.ph.126.net/image/default/duser.png" onerror="this.src='http://r.ph.126.net/image/default/duser.png'">
+					</div>
+					<div class="bd clearfix">
+						<div class="user-info clearfix">
+							<span class="title">photos</span>
+							<a href="javascript:void(0);" class="no-vip" target="_blank">VIP详情</a>
+						</div>
+						<div class="user-act loc clearfix">
+							<a id="J-photoIndexFollow" class="follow" href="javascript:void(0);" hidefocus="true" needlogin="true">
+								<span class="tx plus">关注她</span>
+							</a>
+							<a id="J-photoIndexMessage" class="message" href="javascript:void(0);" hidefocus="true" needlogin="true">发消息</a>
+						</div>
+					</div>
+				</div>
+				<ul class="nav-list clearfix">
+					<li class="item first js-cur">
+						<a class="name j-album" href="{:url('/Index/index/index')}"  hidefocus="true">相册</a>
+
+					</li>
+					<li class="item">
+						<a class="name j-train" href="javascript:void(0);" hidefocus="true">影像隧道</a>
+
+					</li>
+					<li class="item">
+						<a class="name j-galbum" href="javascript:void(0);" hidefocus="true">相片群</a>
+
+					</li>
+
+					<li class="item item-yxp">
+						<a class="name" href="javascript:void(0);" onclick="uploadImg()" hidefocus="true" target="_blank"><em></em><span>定制照片书</span></a>
+						<span class="arrow"></span>
+					</li>
+
+				</ul>
+				<a href="" class="header-extra cloud_link f-trans2" title="点击进入记忆相册官网" target="_blank">
+			<span>
+				<strong>记忆相册</strong>
+				<em>将记忆相册装进口袋</em>
+			</span>
+				</a>
+			</div>
+		</div>
+	</div>
+		<h1 style="text-align:center;">图片上传</h1>
+	    <div id="demo" class="demo"></div>   
+	</body>
+
+	<script type="text/javascript" src="/static/js/upload/jquery.min.js?v=2.1.4"></script>
+	<!-- 引用核心层插件 -->
+	<script type="text/javascript" src="/static/js/upload/zyFile.js"></script>
+	<!-- 引用控制层插件 -->
+	<script type="text/javascript" src="/static/js/upload/zyUpload.js"></script>
+	<!-- 引用初始化JS -->
+	<!--<script type="text/javascript" src="demo.js"></script>-->
+	<script type="text/javascript" src="/static/js/upload/jqueryrotate.js"></script>
+
+	<script type="text/javascript" src="/static/js/upload/index.js"></script>
+</html>
+
+
+
+
+
+
+

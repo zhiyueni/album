@@ -22,7 +22,6 @@ class  Login extends Controller
         $res = $loginModel->checkUser($info);
         if ($res) {
             Session::set('name', $res);
-
             return json_encode(['code' => 200,'data'=>'../../Index/index/index','msg' =>'登录成功']);
         }
         else{
